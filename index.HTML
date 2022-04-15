@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Javascript3</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+    <script>
+        function changeTextStyle() {
+            var myText = document.getElementById("myText");
+            myText.style.borderColor = "black";
+            myText.style.borderStyle = "dotted";
+            myText.style.borderWidth = "0 0 1px 0";
+            myText.style.height = "20px";
+            var myName = document.getElementById("myName");
+            myName.style.borderColor = "black";
+            myName.style.borderStyle = "dotted";
+            myName.style.borderWidth = "0 0 1px 0";
+            myName.style.height = "20px";
+            var myp = document.getElementById("myp");
+            myp.style.borderColor = "black";
+            myp.style.borderStyle = "dotted";
+            myp.style.borderWidth = "0 0 1px 0";
+            myp.style.height = "20px";
+            var myText4 = document.getElementById("myText4");
+            myText4.style.borderColor = "black";
+            myText4.style.borderStyle = "dotted";
+            myText4.style.borderWidth = "0 0 1px 0";
+            myText4.style.height = "20px";
+            var myText6 = document.getElementById("myText6");
+            myText6.style.borderColor = "black";
+            myText6.style.borderStyle = "dotted";
+            myText6.style.borderWidth = "0 0 1px 0";
+            myText6.style.height = "20px";
+            var myNumber1 = document.getElementById("myNumber1");
+            myNumber1.style.borderColor = "black";
+            myNumber1.style.borderStyle = "dotted";
+            myNumber1.style.borderWidth = "0 0 1px 0";
+            myNumber1.style.height = "20px";
+            var myNumber2 = document.getElementById("myNumber2");
+            myNumber2.style.borderColor = "black";
+            myNumber2.style.borderStyle = "dotted";
+            myNumber2.style.borderWidth = "0 0 1px 0";
+            myNumber2.style.height = "20px";
+            var myNumber3 = document.getElementById("myNumber3");
+            myNumber3.style.borderColor = "black";
+            myNumber3.style.borderStyle = "dotted";
+            myNumber3.style.borderWidth = "0 0 1px 0";
+            myNumber3.style.height = "20px";
+            var myNumber4 = document.getElementById("myNumber4");
+            myNumber4.style.borderColor = "black";
+            myNumber4.style.borderStyle = "dotted";
+            myNumber4.style.borderWidth = "0 0 1px 0";
+            myNumber4.style.height = "20px";
+            var myNumber5 = document.getElementById("myNumber5");
+            myNumber5.style.borderColor = "black";
+            myNumber5.style.borderStyle = "dotted";
+            myNumber5.style.borderWidth = "0 0 1px 0";
+            myNumber5.style.height = "20px";
+        }
+
+        function getName() {
+            var a = new Array(5);
+            for (var b = 0; b < a.length; b++)
+                a[b] = Array(2);
+            a[0][0] = myName.value;
+            a[1][0] = myp.value;
+            a[2][0] = myText.value;
+            a[3][0] = myText4.value;
+            a[4][0] = myText6.value;
+            a[0][1] = myNumber1.value;
+            a[1][1] = myNumber2.value;
+            a[2][1] = myNumber3.value;
+            a[3][1] = myNumber4.value;
+            a[4][1] = myNumber5.value;
+            for (var d = 0; d < a.length; d++) {
+                for (var g = 0; g < a[d].length - 1; g++) {
+                    document.write("<h1>" + a[d][g] + " " + a[d][g + 1]);
+
+                }
+
+            }
+
+
+
+
+        }
+    </script>
+</head>
+
+<body onload="changeTextStyle()">
+    <h1>
+        <span>Please input your class Name</span>
+        <br>課程1:<input type="text" class="namebox" id="myName" /> 分數1:
+        <input type="text" class="namebox" id="myNumber1" />
+        <br>課程2:<input type="text" class="namebox" id="myp" /> 分數2:
+        <input type="text" class="namebox" id="myNumber2" />
+        <br>課程3:<input type="text" class="namebox" id="myText" /> 分數3:
+        <input type="text" class="namebox" id="myNumber3" />
+        <br>課程4:<input type="text" class="namebox" id="myText4" /> 分數4:
+        <input type="text" class="namebox" id="myNumber4" />
+        <br>課程5:<input type="text" class="namebox" id="myText6" /> 分數5:
+        <input type="text" class="namebox" id="myNumber5" />
+        <br><input type="button" value="送出" name="submit" onclick="getName()" /><br>
+</body>
+
+</html>
